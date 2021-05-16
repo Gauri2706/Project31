@@ -43,9 +43,6 @@ function setup() {
    for (var j = 50; j <= width-5; j = j+50){
     plinkos.push(new Plinko(j,375));
    }                                                                                                                                                                                  
-
-  //create particle objects
-   
     
 }
  
@@ -65,7 +62,7 @@ function draw() {
   //display the plinkos 
   for (var i = 0; i < plinkos.length; i++) {
     plinkos[i].display();   
-
+  }
   //display the particles 
   for ( var j = 0; j < particles.length; j++){
     particles[j].display();
@@ -75,6 +72,4 @@ function draw() {
     particles.push(new Particle(random(width/2-30, width/2-30), 10, 10))
   }
   
-
-  }
 }
